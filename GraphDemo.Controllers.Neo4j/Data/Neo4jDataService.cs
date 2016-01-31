@@ -51,7 +51,7 @@ namespace GraphDemo.Controllers.Neo4j.Data
         /// <param name="fileUrl">URL path to csv file.</param>
         /// <param name="match">Match query.</param>
         /// <param name="relationship">Relations like - CREATE (p1)-[:KNOWS]->(p2).</param>
-        /// <param name="usePeriodicCommit">You can set the number of rows as in the example, where it is set to 500 rows.</param>
+        /// <param name="usePeriodicCommit">You can use periodic commit.</param>
         public void LoadCSVFileWithHeader(string fileUrl, string match, string create, bool usePeriodicCommit = true)
         {
             LoadCSV(fileUrl, match, create, usePeriodicCommit, true);
