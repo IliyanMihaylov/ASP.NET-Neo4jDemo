@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDemo", "GraphDemo\GraphDemo.csproj", "{60E8356E-0759-44F8-BE9B-D26CF86327DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDemo.Controllers", "GraphDemo.Controllers\GraphDemo.Controllers.csproj", "{2F9BBE46-D932-43B2-B3F7-67180FDC494E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDemo.Models", "GraphDemo.Models\GraphDemo.Models.csproj", "{44C86254-6F85-4685-B47E-0DE37CE495BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDemo.Controllers.GoogleDrive", "GraphDemo.Controllers.GoogleDrive\GraphDemo.Controller.GoogleDrive.csproj", "{7CE0842B-5B43-40AB-AF92-DB01194B95B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphDemo.Controllers.Neo4j", "GraphDemo.Controllers.Neo4j\GraphDemo.Controllers.Neo4j.csproj", "{DBE24559-CA0C-4F68-AB61-BBFD38128D97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E8356E-0759-44F8-BE9B-D26CF86327DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E8356E-0759-44F8-BE9B-D26CF86327DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E8356E-0759-44F8-BE9B-D26CF86327DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E8356E-0759-44F8-BE9B-D26CF86327DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F9BBE46-D932-43B2-B3F7-67180FDC494E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F9BBE46-D932-43B2-B3F7-67180FDC494E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F9BBE46-D932-43B2-B3F7-67180FDC494E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F9BBE46-D932-43B2-B3F7-67180FDC494E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C86254-6F85-4685-B47E-0DE37CE495BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C86254-6F85-4685-B47E-0DE37CE495BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C86254-6F85-4685-B47E-0DE37CE495BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C86254-6F85-4685-B47E-0DE37CE495BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE0842B-5B43-40AB-AF92-DB01194B95B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE0842B-5B43-40AB-AF92-DB01194B95B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE0842B-5B43-40AB-AF92-DB01194B95B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE0842B-5B43-40AB-AF92-DB01194B95B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE24559-CA0C-4F68-AB61-BBFD38128D97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE24559-CA0C-4F68-AB61-BBFD38128D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE24559-CA0C-4F68-AB61-BBFD38128D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE24559-CA0C-4F68-AB61-BBFD38128D97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

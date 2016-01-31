@@ -1,0 +1,26 @@
+﻿@model GraphDemo.Models.DonwloadFile
+
+@{
+    ViewBag.Title = "Donwload";
+}
+
+<h2>Donwload</h2>
+
+<div class="form-horizontal">
+    <h4>DonwloadFile</h4>
+    <hr />
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">Query</div>
+            <div class="col-sm-12">
+                @Html.DisplayTextFor(model => model.Query)
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-5 col-md-10">
+                <input type="button" class="btn btn-default" value="Show Graph" title="Show Graph" onclick="location.href='@Url.Action("Index", "Neo4j", new { query = Model.Query, limits = 1000 })'" />
+            </div>
+        </div>
+    </div>
+</div>

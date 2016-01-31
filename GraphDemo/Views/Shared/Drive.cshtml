@@ -1,0 +1,88 @@
+﻿@model IEnumerable<GraphDemo.Models.FileModel>
+
+@{
+    ViewBag.Title = "Drive";
+}
+
+<h2>@String.Format("Drive - {0}", @User.Identity.Name)</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                <input type="button" class="btn btn-default" value="Donwload" title="Donwload" onclick="location.href='@Url.Action("Donwload", "GoogleDrive", new { url = item.DownloadUrl })'" />
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="row">
+    <h3>
+        CSV files can be stored on the database server and are then accessible using a file:// URL.
+        Alternatively, also supports accessing CSV files via HTTPS, HTTP, and FTP.
+    </h3>
+    <div class="col-sm-4">
+        <h2>Google drive file format. Users and Relationships should be separated with a new line.</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">YourFileFromGoogleDrive.csv</div>
+            <div class="panel-body">
+                    Users - file:///L:/Users.csv
+                    Relationships - file:///L:/Relations.csv
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h2>Csv file with Users. The file must be start with headers.</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">Users.csv</div>
+            <div class="panel-body">
+                id,name,eyes,email
+                1,"borqna","blue","broqna@abv.bg"
+                2,"iliyan","red","iliyan@abv.bg"
+                3,krasen","brown","krasen@abv.bg"
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <h2>Csv file with relationships. The file must be start with headers.</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">Relations.csv</div>
+            <div class="panel-body">
+                fromId,toId
+                1,3
+                1,2
+                2,3
+                3,1
+            </div>
+        </div>
+    </div>
+</div>
