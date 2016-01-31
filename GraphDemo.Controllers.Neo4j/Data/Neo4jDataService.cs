@@ -30,7 +30,7 @@ namespace GraphDemo.Controllers.Neo4j.Data
             return Client.Cypher.Match(matchQuery).Return((n) => n.As<T>()).Results;
         }
 
-        public IEnumerable<Relation<TSource, TTarget>> GetRelationshipsBetweenUsers<TSource, TTarget>(string label)
+        public IEnumerable<Relation<TSource, TTarget>> GetRelationshipBetweenUsers<TSource, TTarget>(string label)
         {
             string matchQuery = String.Format("((u1:Users)-[r:{0}]->(u2:Users))", label);
 

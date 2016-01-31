@@ -17,6 +17,6 @@ namespace GraphDemo.Controllers.Neo4j.Data
         void DropIndex(string label, string property);
 
         IEnumerable<T> GetUserNodes<T>(string label);
-        IEnumerable<Relation<TSource, TTarget>> GetRelationshipsBetweenUsers<TSource, TTarget>(string label);
+        IEnumerable<Relation<TSource, TTarget>> GetRelationshipBetweenUsers<TSource, TTarget>(string label);
     }
 }

@@ -53,7 +53,7 @@ namespace GraphDemo.Controllers.Neo4j.Data
 
         public List<Relation<TSource, TTarget>> LoadRelations<TSource, TTarget>(string label)
         {
-            return DataService.GetRelationshipsBetweenUsers<TSource, TTarget>(label).ToList();
+            return DataService.GetRelationshipBetweenUsers<TSource, TTarget>(label).ToList();
         }
     }
 }
