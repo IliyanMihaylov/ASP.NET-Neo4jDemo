@@ -16,7 +16,7 @@ Csv file with Users. The file must be start with headers.</br>
 id,name,eyes,email </br>
 1,"borqna","blue","broqna@abv.bg" </br>
 2,"iliyan","red","iliyan@abv.bg" </br>
-3,krasen","brown","krasen@abv.bg" </br>
+3,"krasen","brown","krasen@abv.bg" </br>
 
 #Relationships file
 Csv file with relationships. The file must be start with headers. </br>
